@@ -12,8 +12,8 @@ A basic understanding of Java and built-in Java classes is needed to understand 
 
 ### Algorithms
 
-	- 1- Singly Linked Lists (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/SinglyLinkedList.java)
-	
+- 1- Singly Linked Lists (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/SinglyLinkedList.java)
+
 
 ### Data Structures
 
@@ -22,7 +22,7 @@ A basic understanding of Java and built-in Java classes is needed to understand 
 
 Throughout the completion of this repository, I will be using numerous different resources to learn the concepts and I will update this section.
 
-	- 1- Data Structures & Algorithms in Java book, published by Wiley, written by Michael T. Goodrich, Roberto Tamassia, and Michael H. Goldwasser.
+- 1- Data Structures & Algorithms in Java book, published by Wiley, written by Michael T. Goodrich, Roberto Tamassia, and Michael H. Goldwasser.
 
 
 ## Versioning
