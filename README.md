@@ -12,11 +12,12 @@ A basic understanding of Java and built-in Java classes is needed to understand 
 
 ### Algorithms
 
-- 1- Singly Linked Lists (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/SinglyLinkedList.java)
+
 
 
 ### Data Structures
 
+- 1- Singly Linked Lists (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/SinglyLinkedList.java)
 
 ## Contributors
 
