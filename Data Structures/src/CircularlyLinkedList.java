@@ -90,12 +90,15 @@ public class CircularlyLinkedList<E> {
         if (isEmpty()) {
             throw new NoSuchElementException();
         }// headin nextini de belirle, olmazsa tail = ile tail.setNextin yerini degistir, eline kalem kagit al yap
-        E temp = tail.getElement();
+        Node node= tail.getNext();
         Node head = tail.getNext();
-        tail = head;
-        tail.setNext(head.getNext());
+        while(node.getNext() != tail){
+            node = node.getNext();
+        }
+        tail = node;
+        tail.setNext(head);
         size--;
-        return temp;
+        return tail.getElement();
     }//refactor
     public static void main(String args[]){
         CircularlyLinkedList<String> object = new CircularlyLinkedList<>();
@@ -109,6 +112,7 @@ public class CircularlyLinkedList<E> {
                 "Size of the list: " + object.getSize());
         object.addFirst("Utrecht");
         object.addLast("Toronto");
+        object.removeLast();
         object.removeLast();
         System.out.println("First city of the list: " + object.tail.getNext().getElement() + "\n" +
                 "Last city of the list: " + object.tail.getElement() + "\n" +
