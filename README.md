@@ -1,4 +1,4 @@
-# Algortihms & Data Structures in Java
+# Algorithms & Data Structures in Java
 
 This repository contains some algorithms that can be used in any application as well as a wide variety of data structures. These two concepts are really crucial for software engineering and one needs to understand at least how some of them works in order to become a better programmer. That's also why I am creating this repository: To improve myself and extend my vision of coding. I will keep this repository updated as I learn new things.
 
@@ -12,12 +12,15 @@ A basic understanding of Java and built-in Java classes is needed to understand 
 
 ### Algorithms
 
-
+#### Recommendation Algorithms
+- 1- Slope One Algorithm (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Algorithms/src/Recommendation/SlopeOne.java)
 
 
 ### Data Structures
 
-- 1- Singly Linked Lists (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/SinglyLinkedList.java)
+- 1- Singly Linked List (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/SinglyLinkedList.java)
+
+- 2- Circularly Linked List (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/CircularlyLinkedList.java)
 
 ## Contributors
 
