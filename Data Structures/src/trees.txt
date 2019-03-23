@@ -1,0 +1,20 @@
+General properties:
+
+One of the most important non-linear data structures.
+Hierarchical, an element is stored at each position
+
+External nodes = leaves
+
+The Tree Abstract Data Type consists of:
+getElement()
+root
+parent(p)
+children(p) returns the position of the parent of position p: returns an iterable collection containing the childern of position p
+numChildren(p) returns the number of children at position p
+isInternal
+isExternal
+isRoot
+size
+isEmpty
+iterator
+positions()

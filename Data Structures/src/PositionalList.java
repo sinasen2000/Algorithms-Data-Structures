@@ -4,7 +4,7 @@
 public class PositionalList<E> {
 
     // nested Node class
-    private static class Node<E> {
+    private static class Node<E> implements Position<E>{
         private E element;
         private Node<E> prev;
         private Node<E> next;
@@ -57,6 +57,101 @@ public class PositionalList<E> {
             header.setNext(trailer);
         }
 
-       // to be continued
+       private Node<E> validate(Position<E> p){
+            if (!(p instanceof Node)){
+                throw new IllegalArgumentException("Invalid input");
+            }
+            Node<E> node = (Node<E>) p;
+            if(node.getNext() == null){
+                throw new IllegalArgumentException("p isnt in the list anymore");
+            }
+            return node;
+       }
+
+       private Position<E> position(Node<E> node){
+            if(node == header || node == trailer){
+                return null;
+            }
+            return node;
+       }
+
+
+
+       public int size(){
+            return size;
+       }
+       public boolean isEmpty(){
+            return size == 0;
+       }
+       public Position<E> first(){
+            return position(header.getNext());
+       }
+
+       public Position<E> last(){
+            return position(trailer.getPrev());
+       }
+       public Position<E> before(Position<E> p) throws IllegalArgumentException{
+            Node<E> node = validate(p);
+            return position(node.getPrev());
+       }
+       public Position<E> after(Position<E> p) throws IllegalArgumentException{
+           Node<E> node = validate(p);
+           return position(node.getNext());
+       }
+
+
+
+
+       private Position<E> addBetween(E e, Node<E> pred, Node<E> succ){
+            Node<E> node = new Node<>(e, pred, succ);
+            pred.setNext(node);
+            succ.setPrev(node);
+            size++;
+            return node;
+       }
+
+
+
+
+
+       public Position<E> addFirst(E e){
+            return addBetween(e, header, header.getNext());
+       }
+       public Position<E> addLast(E e){
+            return addBetween(e, trailer.getPrev(), trailer);
+       }
+
+       public Position<E> addBefore(Position<E> p, E e){
+            Node<E> node = validate(p);
+            return addBetween(e, node.getPrev(), node);
+       }
+       public Position<E> addAfter(Position<E> p, E e){
+            Node<E> node = validate(p);
+            return addBetween(e, node, node.getNext());
+       }
+
+
+       public E set(Position<E> p, E e){
+            Node<E> node = validate(p);
+            E garbageElement = node.getElement();
+            node.setElement(e);
+            return garbageElement;
+       }
+
+       public E remove(Position<E> p){
+            Node<E> node = validate(p);
+            E garbageElement = node.getElement();
+            Node<E> pred = node.getPrev();
+            Node<E> succ = node.getNext();
+            pred.setNext(succ);
+            succ.setPrev(pred);
+            size--;
+            // help with garbage collection(not necessary but still good), without these, this method will basically be like add between.
+            node.setElement(null);
+            node.setPrev(null);
+            node.setNext(null);
+            return garbageElement;
+       }
+
 
     }
