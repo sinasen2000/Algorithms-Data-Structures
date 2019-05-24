@@ -1,3 +1,5 @@
+# THIS REPOSITORY IS STILL UNDER DEVELOPMENT, AFTER I FINISH THE ADS THAT I LIKE, I WILL ALSO WRITE SOME TESTS.
+
 # Algorithms & Data Structures in Java
 
 This repository contains some algorithms that can be used in any application as well as a wide variety of data structures. These two concepts are really crucial for software engineering and one needs to understand at least how some of them works in order to become a better programmer. That's also why I am creating this repository: To improve myself and extend my vision of coding. I will keep this repository updated as I learn new things.
@@ -10,17 +12,35 @@ These instructions will get you a copy of the project up and running on your loc
 
 A basic understanding of Java and built-in Java classes is needed to understand these algorithms. You should also have access to a Java IDE and some version of JDK.
 
-### Algorithms
+## Algorithms
+
+### Sorting Algorithms
+- 1- [Array Based Merge Sort](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Algorithms/src/Sorting/ArrayBasedMergeSort.java)
+- 2- [Quick Sort]
 
 #### Recommendation Algorithms
 - 1- [Slope One Algorithm](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Algorithms/src/Recommendation/SlopeOne.java)
 
 
-### Data Structures
+## Data Structures
 
-- 1- Singly Linked List (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/SinglyLinkedList.java)
 
-- 2- Circularly Linked List (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/CircularlyLinkedList.java)
+### Linked Lists
+- 1- [Singly Linked List](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/SinglyLinkedList.java)
+
+- 2- [Circularly Linked List](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/CircularlyLinkedList.java)
+
+- 3- [Doubly Linked List](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/DoublyLinkedList.java)
+
+### Queues
+
+- 1- [Array Based Queue](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/ArrayBasedQueue.java)
+
+- 2- [Singly Linked List Based Queue](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/SLLBasedQueue.java)
+
+- 3- [Circularly Link List Based Queue](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/CircularQueue.java)
+
+- 4- [Doubly Linked List Based Queue (Double Ended Queue)](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Data%20Structures/src/DLLBasedDeque.java)
 
 ## Contributors
 
@@ -35,7 +55,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Sina Sen** - *Initial work* - [PurpleBooth](https://github.com/sinasen2000)
+* **Sina Sen** - [TU Delft](tudelft.nl)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
