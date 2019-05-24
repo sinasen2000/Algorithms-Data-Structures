@@ -13,7 +13,7 @@ A basic understanding of Java and built-in Java classes is needed to understand 
 ### Algorithms
 
 #### Recommendation Algorithms
-- 1- Slope One Algorithm (https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Algorithms/src/Recommendation/SlopeOne.java)
+- 1- [Slope One Algorithm](https://github.com/sinasen2000/Algorithms-Data-Structures/blob/master/Algorithms/src/Recommendation/SlopeOne.java)
 
 
 ### Data Structures
